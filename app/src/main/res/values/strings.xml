@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Sight-In Assistant</string>
+    <string name="sight_in_assistant">Sight-In Assistant</string>
+    <string name="enter_deviation_below">Enter Deviation below:</string>
+    <string name="how_many_inches_is_your_group_deviated_from_bulleye">How many inches is your group deviated from bulleye?</string>
+    <string name="_300_yards">300 Yards</string>
+    <string name="_200_yards">200 Yards</string>
+    <string name="_150_yards">150 Yards</string>
+    <string name="_100_yards">100 Yards</string>
+    <string name="_75_yards">75 Yards</string>
+    <string name="_50_yards">50 Yards</string>
+    <string name="_25_yards">25 Yards</string>
+    <string name="calculate_clicks">Calculate Clicks</string>
+    <string name="click_numbers">Click Numbers:</string>
+    <string name="grouping_distance_from_bulleye_inches">Grouping Distance from Bulleye(inches)</string>
+    <string name="grouping_deviation">Grouping Deviation</string>
+    <string name="fire_3_to_5_shots_to_your_target_at">Fire 3 to 5 shots to your target at</string>
+    <string name="yards">yards.</string>
+    <string name="distance_yards">Distance(yards)</string>
+    <string name="_3">3.</string>
+    <string name="_1">1.</string>
+    <string name="your_scope_adjusts_in">Your scope adjusts in</string>
+    <string name="_1_8_moa">1/8 MOA</string>
+    <string name="_1_4_moa">1/4 MOA</string>
+    <string name="_1_2_moa">1/2 MOA</string>
+    <string name="_1_moa">1 MOA</string>
+    <string name="_2">2.</string>
+    <string name="grouping_deviation_from_bulleye">Grouping Deviation from Bulleye:</string>
+    <string name="clicks_on_your_scope">clicks on your scope.</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="emptyLine">__________</string>
+    <string name="turn">Turn</string>
+    <string name="_4">4.</string>
+    <string name="deviation_inches">Deviation(inches)</string>
+    <string name="_2_moa">2 MOA</string>
+</resources>

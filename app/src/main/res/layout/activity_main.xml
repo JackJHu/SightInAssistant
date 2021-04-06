@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Widget.SightIn.Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="104dp"
+            android:text="@string/sight_in_assistant"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.382"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/step0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/_1"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/Your_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_scope_adjusts_in"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/step0"
+            app:layout_constraintStart_toEndOf="@id/step0" />
+
+        <RadioGroup
+            android:id="@+id/MOA_Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toEndOf="@id/step0"
+            app:layout_constraintTop_toBottomOf="@id/step0">
+
+            <RadioButton
+                android:id="@+id/MOA_Button_OneEighth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_8_moa" />
+
+            <RadioButton
+                android:id="@+id/MOA_Button_OneFourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/_1_4_moa" />
+
+            <RadioButton
+                android:id="@+id/MOA_Button_Half"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_2_moa" />
+
+            <RadioButton
+                android:id="@+id/MOA_Button_One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_moa" />
+
+            <RadioButton
+                android:id="@+id/MOA_Buton_Two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_moa"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/_2"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MOA_Group" />
+
+        <TextView
+            android:id="@+id/fireShots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fire_3_to_5_shots_to_your_target_at"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/step1"
+            app:layout_constraintStart_toEndOf="@id/step1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yardsInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="@dimen/standard_text_size"
+            android:hint="@string/distance_yards"
+            app:layout_constraintStart_toStartOf="@id/fireShots"
+            app:layout_constraintTop_toBottomOf="@id/fireShots">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/yardsInputEdits"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/standard_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/_3"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/step1" />
+
+        <TextView
+            android:id="@+id/enter_inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grouping_deviation_from_bulleye"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/step2"
+            app:layout_constraintStart_toEndOf="@id/step2" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/distance_from_bulleye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/deviation_inches"
+            app:layout_constraintStart_toStartOf="@id/enter_inch"
+            app:layout_constraintTop_toBottomOf="@id/enter_inch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/distance_from_bulleye_input"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/_4"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/step2" />
+
+        <TextView
+            android:id="@+id/turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/turn"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/step3"
+            app:layout_constraintStart_toEndOf="@id/step3" />
+
+        <TextView
+            android:id="@+id/clicks_Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size"
+            android:text="@string/emptyLine"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/turn"
+            app:layout_constraintBottom_toBottomOf="@id/turn"/>
+
+        <TextView
+            android:id="@+id/on_Your_Scope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_text_size"
+            android:text="@string/clicks_on_your_scope"
+            app:layout_constraintStart_toEndOf="@id/clicks_Display"
+            app:layout_constraintBottom_toBottomOf="@id/clicks_Display"/>
+
+        <Button
+            android:id="@+id/calculate_Clicks_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintTop_toBottomOf="@id/step3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
